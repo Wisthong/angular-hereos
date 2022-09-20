@@ -1,0 +1,42 @@
+#caja {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: rgb(17, 24, 39);
+  opacity: 1;
+  color: white;
+  img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  blockquote {
+    color: #fb8500;
+    font-weight: bold;
+    span {
+      font-weight: 300;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  div {
+    padding: 4px 0;
+    text-align: center;
+    img {
+      width: 500px;
+      height: 600px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  div {
+    padding: 4px 0;
+    text-align: center;
+    img {
+      width: 500px;
+      height: 600px;
+    }
+  }
+}

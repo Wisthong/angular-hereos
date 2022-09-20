@@ -1,0 +1,26 @@
+#caja {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: rgb(17, 24, 39);
+  opacity: 1;
+  color: white;
+  img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  img {
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  div {
+    padding: 5px;
+    img {
+      height: 500px;
+    }
+  }
+}

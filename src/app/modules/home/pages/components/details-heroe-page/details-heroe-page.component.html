@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="mt-2" id="caja" *ngIf="hereo">
+        <h1 class="text-center">
+          {{ hereo.nombre }}
+        </h1>
+        <img src="{{ hereo.imagen }}" width="100%" alt="" />
+        <blockquote>Top<span>
+          {{ hereo.top}}
+        </span> </blockquote>
+        <blockquote>Tipo<span>
+          {{ hereo.tipo}}
+        </span> </blockquote>
+        <blockquote>Poderes<span>
+          {{ hereo.poderes}}
+        </span> </blockquote>
+        <blockquote>Editorial<span>
+          {{ hereo.editorial}}
+        </span> </blockquote>
+        <blockquote>Estreno<span>
+          {{ hereo.editorial}}
+        </span> </blockquote>
+        <blockquote>Descripcion<span>
+          {{ hereo.descripcion}}
+        </span> </blockquote>
+        <div class="d-grid">
+          <a
+            name=""
+            id=""
+            class="btn btn-secondary"
+            [routerLink]="['/']"
+            routerLinkActive="router-link-active"
+            role="button"
+            >Ir al Inicio</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer-page></app-footer-page>

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 import { Observable } from 'rxjs';
 import { Heroe } from '../models/heroe';
 
@@ -8,6 +8,7 @@ import { Heroe } from '../models/heroe';
   providedIn: 'root',
 })
 export class HeroeService {
+
   private readonly API = environment.api;
   constructor(private readonly http: HttpClient) {}
 

@@ -4,7 +4,10 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '', redirectTo:'heroes', pathMatch:'full'
+  },
+  {
+    path: 'heroes',
     loadChildren: () =>
       import('@modules/home/home.module').then((m) => m.HomeModule),
     title: 'Marvel & DC',

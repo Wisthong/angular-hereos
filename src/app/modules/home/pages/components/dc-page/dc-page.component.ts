@@ -12,7 +12,7 @@ export class DcPageComponent implements OnInit {
   constructor(private readonly heroeSvc: HeroeService) { }
 
   ngOnInit(): void {
-    this.heroeSvc.getAllMarvel().subscribe(
+    this.heroeSvc.getAllDc().subscribe(
       (resOk=>{
         this.listDc = resOk;
       })

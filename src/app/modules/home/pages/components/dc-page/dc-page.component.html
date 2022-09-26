@@ -1,5 +1,6 @@
 <app-navbar></app-navbar>
-<div class="container">
+
+<div class="container" *ngIf="listDc.length > 0; else loading">
   <div class="row">
     <div class="col-12 col-lg-3 col-md-6" *ngFor="let item of listDc">
       <div class="mt-3 mb-3 p-2" id="caja">
@@ -13,4 +14,9 @@
     </div>
   </div>
 </div>
+
+<ng-template #loading>
+  <div class="lds-dual-ring"></div>
+</ng-template>
+
 <app-footer-page></app-footer-page>
